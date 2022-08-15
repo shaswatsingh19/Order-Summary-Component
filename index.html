@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Order summary card</title>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -15,23 +17,40 @@
   </style>
 </head>
 <body>
+  <div id="bg-pattern"></div>
+  <div class="container">
+    <div class="hero-column">
+      <img src="images/illustration-hero.svg" class="svg-hero">
+    </div>
+    <div class="columns title-column">
+      <h2>Order Summary</h2>
+    </div>
+    <div class="columns desc-column">
+      <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
 
-  Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
+    </div>
+    <div class="columns plan-column">
+      <section >
+        <img src="images/icon-music.svg" class="svg-music">
+        <div class="plan">
+          <h3>Annual Plan</h3>
+          <p>$59.99/year</p>
+        </div>
+      </section>
+      <section>
+        <a href="https://www.frontendmentor.io/profile/shaswatsingh19" target="_blank" class="plan-change-link">change</a>
+      </section>
+    </div>
+    <div class="columns order">
+      <a href="https://github.com/shaswatsingh19/frontend-mentor-solutions" target="_blank" class="payment order-common">Proceed to Payment</a>
+      <a href="https://www.linkedin.com/in/shaswatsingh19/" target="_blank" class="cancel order-common">Cancel Order</a>
+    </div>
+  </div>
   
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/shaswatsingh19/Order-Summary-Component">Shaswat Singh</a>.
   </div>
+  <script src="index.js"></script>
 </body>
 </html>
